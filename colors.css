@@ -13,7 +13,7 @@
   @define-color color5 #1f4e5b;
   @define-color color6 #bf6341;
   @define-color color7 #bf9b6f;
-  @define-color color8 #2e1b1e;
+  @define-color color8 #4a2d30;
   @define-color color9 #d94b18;
   @define-color color10 #d98b48;
   @define-color color11 #f29d35;
@@ -26,6 +26,6 @@
   @define-color background #000000;
   @define-color foreground #bf9b6f;
   @define-color accent #f28a2e;
-  @define-color selection_bg #bf9b6f;
+  @define-color selection_bg #f28a2e;
   @define-color selection_fg #000000;
   @define-color cursor #bf9b6f;
