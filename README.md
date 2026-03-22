@@ -25,7 +25,7 @@ omarchy-theme-install https://github.com/OldJobobo/omarchy-dune-theme
 <table>
   <tr>
     <td><img src="backgrounds/01-dune.jpg" width="220" alt="Dune wallpaper 01"></td>
-    <td><img src="backgrounds/02-arrakis-awaits.png" width="220" alt="Arrakis Awaits wallpaper"></td>
+    <td><img src="backgrounds/02-arrakis-awaits.jpg" width="220" alt="Arrakis Awaits wallpaper"></td>
     <td><img src="backgrounds/03-desert-planet.jpg" width="220" alt="Desert Planet wallpaper"></td>
   </tr>
   <tr>
@@ -39,13 +39,13 @@ omarchy-theme-install https://github.com/OldJobobo/omarchy-dune-theme
     <td><img src="backgrounds/08-spice-flows.jpg" width="220" alt="Spice Flows wallpaper"></td>
   </tr>
   <tr>
-    <td><img src="backgrounds/09-muad-dib.png" width="220" alt="Muad'Dib wallpaper"></td>
-    <td><img src="backgrounds/10-kwisatz-haderach.png" width="220" alt="Kwisatz Haderach wallpaper"></td>
+    <td><img src="backgrounds/09-muad-dib.jpg" width="220" alt="Muad'Dib wallpaper"></td>
+    <td><img src="backgrounds/10-kwisatz-haderach.jpg" width="220" alt="Kwisatz Haderach wallpaper"></td>
     <td><img src="backgrounds/11-mind-killer.jpg" width="220" alt="Litany Against Fear wallpaper"></td>
   </tr>
   <tr>
     <td><img src="backgrounds/12-desert-power.jpg" width="220" alt="Desert Power wallpaper"></td>
-    <td><img src="backgrounds/14-omadune.png" width="220" alt="Omadune wallpaper"></td>
+    <td><img src="backgrounds/14-omadune.jpg" width="220" alt="Omadune wallpaper"></td>
   </tr>
 </table>
 
