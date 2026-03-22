@@ -1,26 +1,56 @@
+#                                                                    
+#                                                                    
+# ,gggggggggggg,    ,ggg,         gg  ,ggg, ,ggggggg,     ,ggggggg,  
+# dP"""88""""""Y8b, dP""Y8a        88 dP""Y8,8P"""""Y8b  ,dP""""""Y8b
+# Yb,  88       `8b,Yb, `88        88 Yb, `8dP'     `88  d8'    a  Y8
+#  `"  88        `8b `"  88        88  `"  88'       88  88     "Y8P'
+#      88         Y8     88        88      88        88  `8baaaa     
+#      88         d8     88        88      88        88 ,d8P""""     
+#      88        ,8P     88        88      88        88 d8"          
+#      88       ,8P'     88        88      88        88 Y8,          
+#      88______,dP'      Y8b,____,d88,     88        Y8,`Yba,,_____, 
+#     888888888P"         "Y888888P"Y8     88        `Y8  `"Y8888888 
+#                                                                    
+#                                                                    
+#                                                                    
+#                                                                    
+
 name: Aether
-accent: "#f28a2e"
-cursor: "#f28a2e"
-background: "#000000"
-foreground: "#bf9b6f"
+accent: "#c86a24"
+cursor: "#d1b38a"
+background: "#120d0a"
+foreground: "#d1b38a"
 details: darker
 
 terminal_colors:
   normal:
-    black:   "#000000"
-    red:     "#d94b18"
-    green:   "#d98b48"
-    yellow:  "#f29d35"
-    blue:    "#f28a2e"
-    magenta: "#1f4e5b"
-    cyan:    "#bf6341"
-    white:   "#bf9b6f"
+    black:   "#120d0a"
+    red:     "#8e2f22"
+    green:   "#7f6a46"
+    yellow:  "#b88a42"
+    blue:    "#c86a24"
+    magenta: "#3c8f95"
+    cyan:    "#8a5e3b"
+    white:   "#d1b38a"
   bright:
-    black:   "#4a2d30"
-    red:     "#d94b18"
-    green:   "#d98b48"
-    yellow:  "#f29d35"
-    blue:    "#f28a2e"
-    magenta: "#49afc4"
-    cyan:    "#bf6341"
-    white:   "#f2e85c"
+    black:   "#3a2a20"
+    red:     "#b24a22"
+    green:   "#9a8457"
+    yellow:  "#d2a25a"
+    blue:    "#e08a2e"
+    magenta: "#58b8c2"
+    cyan:    "#a87448"
+    white:   "#f0ddba"
+
+# ░░      ░░░  ░░░░░░░░       ░░                              
+# ▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒                              
+# ▓  ▓▓▓▓  ▓▓  ▓▓▓▓▓▓▓▓  ▓▓▓▓  ▓                              
+# █  ████  ██  ████████  ████  █                              
+# ██      ███        ██       ██                              
+#                                                             
+# ░        ░░░      ░░░       ░░░░      ░░░       ░░░░      ░░
+# ▒▒▒▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒
+# ▓▓▓▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓
+# █  ████  ██  ████  ██  ████  ██  ████  ██  ████  ██  ████  █
+# ██      ████      ███       ████      ███       ████      ██
+#                                                             

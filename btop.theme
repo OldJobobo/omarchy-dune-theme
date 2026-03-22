@@ -1,70 +1,100 @@
+#                                                                    
+#                                                                    
+# ,gggggggggggg,    ,ggg,         gg  ,ggg, ,ggggggg,     ,ggggggg,  
+# dP"""88""""""Y8b, dP""Y8a        88 dP""Y8,8P"""""Y8b  ,dP""""""Y8b
+# Yb,  88       `8b,Yb, `88        88 Yb, `8dP'     `88  d8'    a  Y8
+#  `"  88        `8b `"  88        88  `"  88'       88  88     "Y8P'
+#      88         Y8     88        88      88        88  `8baaaa     
+#      88         d8     88        88      88        88 ,d8P""""     
+#      88        ,8P     88        88      88        88 d8"          
+#      88       ,8P'     88        88      88        88 Y8,          
+#      88______,dP'      Y8b,____,d88,     88        Y8,`Yba,,_____, 
+#     888888888P"         "Y888888P"Y8     88        `Y8  `"Y8888888 
+#                                                                    
+#                                                                    
+#                                                                    
+#                                                                    
+
 # Main background, empty for terminal default, need to be empty if you want transparent background
 theme[main_bg]=""
 
 # Main text color
-theme[main_fg]="#bf9b6f"
+theme[main_fg]="#d1b38a"
 
 # Title color for boxes
-theme[title]="#d94b18"
+theme[title]="#c86a24"
 
 # Highlight color for keyboard shortcuts
-theme[hi_fg]="#49afc4"
+theme[hi_fg]="#58b8c2"
 
 # Background color of selected item in processes box
-theme[selected_bg]="#4a2d30"
+theme[selected_bg]="#3a2a20"
 
 # Foreground color of selected item in processes box
-theme[selected_fg]="#49afc4"
+theme[selected_fg]="#e08a2e"
 
 # Color of inactive/disabled text
-theme[inactive_fg]="#4a2d30"
+theme[inactive_fg]="#8f765d"
 
 # Misc colors for processes box including mini cpu graphs, details memory graph and details status text
-theme[proc_misc]="#f2e85c"
+theme[proc_misc]="#d2a25a"
 
 # Box outline and divider line color
-theme[cpu_box]="#d98b48"
-theme[mem_box]="#d98b48"
-theme[net_box]="#d98b48"
-theme[proc_box]="#d98b48"
-theme[div_line]="#4a2d30"
+theme[cpu_box]="#a87448"
+theme[mem_box]="#a87448"
+theme[net_box]="#a87448"
+theme[proc_box]="#a87448"
+theme[div_line]="#3a2a20"
 
 # Gradient for all meters and graphs
-theme[temp_start]="#bf6341"
-theme[temp_mid]="#f28a2e"
-theme[temp_end]="#d94b18"
+theme[temp_start]="#8a5e3b"
+theme[temp_mid]="#c86a24"
+theme[temp_end]="#b24a22"
 
 
-theme[cpu_start]="#f29d35"
-theme[cpu_mid]="#f28a2e"
-theme[cpu_end]="#bf6341"
+theme[cpu_start]="#b88a42"
+theme[cpu_mid]="#c86a24"
+theme[cpu_end]="#8a5e3b"
 
 
-theme[free_start]="#49afc4"
-theme[free_mid]="#1f4e5b"
-theme[free_end]="#bf9b6f"
+theme[free_start]="#58b8c2"
+theme[free_mid]="#3c8f95"
+theme[free_end]="#d1b38a"
 
 
-theme[cached_start]="#f29d35"
-theme[cached_mid]="#f28a2e"
-theme[cached_end]="#d94b18"
+theme[cached_start]="#b88a42"
+theme[cached_mid]="#c86a24"
+theme[cached_end]="#b24a22"
 
 
-theme[available_start]="#49afc4"
-theme[available_mid]="#1f4e5b"
-theme[available_end]="#bf9b6f"
+theme[available_start]="#58b8c2"
+theme[available_mid]="#3c8f95"
+theme[available_end]="#d1b38a"
 
 
-theme[used_start]="#f29d35"
-theme[used_mid]="#f28a2e"
-theme[used_end]="#d94b18"
+theme[used_start]="#b88a42"
+theme[used_mid]="#c86a24"
+theme[used_end]="#b24a22"
 
 
-theme[download_start]="#f29d35"
-theme[download_mid]="#f28a2e"
-theme[download_end]="#bf6341"
+theme[download_start]="#b88a42"
+theme[download_mid]="#c86a24"
+theme[download_end]="#8a5e3b"
 
 
-theme[upload_start]="#f29d35"
-theme[upload_mid]="#f28a2e"
-theme[upload_end]="#bf6341"
+theme[upload_start]="#b88a42"
+theme[upload_mid]="#c86a24"
+theme[upload_end]="#8a5e3b"
+
+# ░░      ░░░  ░░░░░░░░       ░░                              
+# ▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒                              
+# ▓  ▓▓▓▓  ▓▓  ▓▓▓▓▓▓▓▓  ▓▓▓▓  ▓                              
+# █  ████  ██  ████████  ████  █                              
+# ██      ███        ██       ██                              
+#                                                             
+# ░        ░░░      ░░░       ░░░░      ░░░       ░░░░      ░░
+# ▒▒▒▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒
+# ▓▓▓▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓
+# █  ████  ██  ████  ██  ████  ██  ████  ██  ████  ██  ████  █
+# ██      ████      ███       ████      ███       ████      ██
+#                                                             

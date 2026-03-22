@@ -1,38 +1,58 @@
-# Dune Neovim Colorscheme
+# Omarchy Dune Theme
 
-This theme repo now ships a standalone Neovim colorscheme plugin.
+From dust, discipline. From heat, clarity. Dune draws Arrakis into Omarchy in spice-burnt orange, sand-muted text, dark stone shadow, and a faded teal that glints at the edge like a vision half-revealed. Severe, deliberate, and touched with prophecy, it is still meant to hold up under daily use instead of collapsing into ornament.
 
-## Structure
+## Preview
 
-- `colors/dune.lua`: colorscheme entrypoint for `:colorscheme dune`
-- `lua/dune/palette.lua`: loads `colors.toml` and derives semantic roles
-- `lua/dune/theme.lua`: setup, terminal colors, and highlight application
-- `lua/dune/groups/*.lua`: built-in UI, syntax, Treesitter/LSP, and plugin groups
+![Omarchy Dune preview](preview.png)
 
-## Omarchy Wiring
+## Install
 
-The local [neovim.lua](/home/oldjobobo/Projects/themes/omarchy-dune-theme/neovim.lua) spec points Lazy at the active Omarchy theme directory:
+Install it with the standard Omarchy flow:
 
-```lua
-dir = vim.fn.expand("~/.config/omarchy/current/theme")
+```bash
+omarchy-theme-install https://github.com/OldJobobo/omarchy-dune-theme
 ```
 
-That lets the theme load as a local plugin without publishing a separate repo first.
+## What's Included
 
-## Options
+- A standalone Neovim colorscheme plugin with `colors/dune.lua` and the `lua/dune/` module tree, so `:colorscheme dune` works directly from the active Omarchy theme directory.
+- Companion theme files for Vencord, Warp, Chromium, and Zed.
+- Shared palette sources in CSS and TOML form for keeping custom integrations aligned.
 
-```lua
-require("dune").setup({
-  transparent = false,
-  italic_comments = true,
-  dim_inactive = false,
-  terminal_colors = true,
-  overrides = {},
-})
-```
+## Wallpapers
 
-## Manual Test
+<table>
+  <tr>
+    <td><img src="backgrounds/01-dune.jpg" width="220" alt="Dune wallpaper 01"></td>
+    <td><img src="backgrounds/02-arrakis-awaits.png" width="220" alt="Arrakis Awaits wallpaper"></td>
+    <td><img src="backgrounds/03-desert-planet.jpg" width="220" alt="Desert Planet wallpaper"></td>
+  </tr>
+  <tr>
+    <td><img src="backgrounds/04-dune-awakening.jpg" width="220" alt="Dune Awakening wallpaper"></td>
+    <td><img src="backgrounds/05-paul-atreides.jpg" width="220" alt="Paul Atreides wallpaper"></td>
+    <td><img src="backgrounds/06-shai-hulud.jpg" width="220" alt="Shai-Hulud wallpaper"></td>
+  </tr>
+  <tr>
+    <td><img src="backgrounds/07-desert-mouse.jpg" width="220" alt="Desert Mouse wallpaper"></td>
+    <td><img src="backgrounds/08-chani-and-paul.jpg" width="220" alt="Chani and Paul wallpaper"></td>
+    <td><img src="backgrounds/08-spice-flows.jpg" width="220" alt="Spice Flows wallpaper"></td>
+  </tr>
+  <tr>
+    <td><img src="backgrounds/09-muad-dib.png" width="220" alt="Muad'Dib wallpaper"></td>
+    <td><img src="backgrounds/10-kwisatz-haderach.png" width="220" alt="Kwisatz Haderach wallpaper"></td>
+    <td><img src="backgrounds/11-mind-killer.jpg" width="220" alt="Litany Against Fear wallpaper"></td>
+  </tr>
+  <tr>
+    <td><img src="backgrounds/12-desert-power.jpg" width="220" alt="Desert Power wallpaper"></td>
+    <td><img src="backgrounds/14-omadune.png" width="220" alt="Omadune wallpaper"></td>
+  </tr>
+</table>
 
-```vim
-:colorscheme dune
-```
+## Notes
+
+- `neovim.lua` is wired to Omarchy's active theme directory, so the bundled colorscheme loads as a local plugin when this theme is active.
+
+## Attribution
+
+- Built around the desert-industrial mood of Dune, with the usual amount of reverence for spice, dust, and sealed metal.

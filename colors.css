@@ -1,3 +1,19 @@
+/*                                                                     */
+/*                                                                     */
+/* ,gggggggggggg,    ,ggg,         gg  ,ggg, ,ggggggg,     ,ggggggg,   */
+/* dP"""88""""""Y8b, dP""Y8a        88 dP""Y8,8P"""""Y8b  ,dP""""""Y8b */
+/* Yb,  88       `8b,Yb, `88        88 Yb, `8dP'     `88  d8'    a  Y8 */
+/*  `"  88        `8b `"  88        88  `"  88'       88  88     "Y8P' */
+/*      88         Y8     88        88      88        88  `8baaaa      */
+/*      88         d8     88        88      88        88 ,d8P""""      */
+/*      88        ,8P     88        88      88        88 d8"           */
+/*      88       ,8P'     88        88      88        88 Y8,           */
+/*      88______,dP'      Y8b,____,d88,     88        Y8,`Yba,,_____,  */
+/*     888888888P"         "Y888888P"Y8     88        `Y8  `"Y8888888  */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
 
 /*
    * Aether tokenized template for shared CSS color variables.
@@ -5,27 +21,40 @@
 */
 
   /* ANSI palette */
-  @define-color color0 #000000;
-  @define-color color1 #d94b18;
-  @define-color color2 #d98b48;
-  @define-color color3 #f29d35;
-  @define-color color4 #f28a2e;
-  @define-color color5 #1f4e5b;
-  @define-color color6 #bf6341;
-  @define-color color7 #bf9b6f;
-  @define-color color8 #4a2d30;
-  @define-color color9 #d94b18;
-  @define-color color10 #d98b48;
-  @define-color color11 #f29d35;
-  @define-color color12 #f28a2e;
-  @define-color color13 #49afc4;
-  @define-color color14 #bf6341;
-  @define-color color15 #f2e85c;
+  @define-color color0 #120d0a;
+  @define-color color1 #8e2f22;
+  @define-color color2 #7f6a46;
+  @define-color color3 #b88a42;
+  @define-color color4 #c86a24;
+  @define-color color5 #3c8f95;
+  @define-color color6 #8a5e3b;
+  @define-color color7 #d1b38a;
+  @define-color color8 #3a2a20;
+  @define-color color9 #b24a22;
+  @define-color color10 #9a8457;
+  @define-color color11 #d2a25a;
+  @define-color color12 #e08a2e;
+  @define-color color13 #58b8c2;
+  @define-color color14 #a87448;
+  @define-color color15 #f0ddba;
 
   /* Optional semantic aliases */
-  @define-color background #000000;
-  @define-color foreground #bf9b6f;
-  @define-color accent #f28a2e;
-  @define-color selection_bg #f28a2e;
-  @define-color selection_fg #000000;
-  @define-color cursor #bf9b6f;
+  @define-color background #120d0a;
+  @define-color foreground #d1b38a;
+  @define-color accent #c86a24;
+  @define-color selection_bg #3a2a20;
+  @define-color selection_fg #e08a2e;
+  @define-color cursor #d1b38a;
+
+/* ░░      ░░░  ░░░░░░░░       ░░                               */
+/* ▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒                               */
+/* ▓  ▓▓▓▓  ▓▓  ▓▓▓▓▓▓▓▓  ▓▓▓▓  ▓                               */
+/* █  ████  ██  ████████  ████  █                               */
+/* ██      ███        ██       ██                               */
+/*                                                              */
+/* ░        ░░░      ░░░       ░░░░      ░░░       ░░░░      ░░ */
+/* ▒▒▒▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒ */
+/* ▓▓▓▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓ */
+/* █  ████  ██  ████  ██  ████  ██  ████  ██  ████  ██  ████  █ */
+/* ██      ████      ███       ████      ███       ████      ██ */
+/*                                                              */

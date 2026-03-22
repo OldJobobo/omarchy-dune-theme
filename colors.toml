@@ -1,35 +1,65 @@
+#                                                                    
+#                                                                    
+# ,gggggggggggg,    ,ggg,         gg  ,ggg, ,ggggggg,     ,ggggggg,  
+# dP"""88""""""Y8b, dP""Y8a        88 dP""Y8,8P"""""Y8b  ,dP""""""Y8b
+# Yb,  88       `8b,Yb, `88        88 Yb, `8dP'     `88  d8'    a  Y8
+#  `"  88        `8b `"  88        88  `"  88'       88  88     "Y8P'
+#      88         Y8     88        88      88        88  `8baaaa     
+#      88         d8     88        88      88        88 ,d8P""""     
+#      88        ,8P     88        88      88        88 d8"          
+#      88       ,8P'     88        88      88        88 Y8,          
+#      88______,dP'      Y8b,____,d88,     88        Y8,`Yba,,_____, 
+#     888888888P"         "Y888888P"Y8     88        `Y8  `"Y8888888 
+#                                                                    
+#                                                                    
+#                                                                    
+#                                                                    
+
 # Accent and UI colors
-accent = "#f28a2e"
-active_border_color = "#f28a2e"
-active_tab_background = "#f28a2e"
+accent = "#c86a24"
+active_border_color = "#e08a2e"
+active_tab_background = "#c86a24"
 
 # Cursor colors
-cursor = "#bf9b6f"
+cursor = "#d1b38a"
 
 # Primary colors
-foreground = "#bf9b6f"
-background = "#000000"
+foreground = "#d1b38a"
+background = "#120d0a"
 
 # Selection colors
-selection_foreground = "#000000"
-selection_background = "#f28a2e"
+selection_foreground = "#e08a2e"
+selection_background = "#3a2a20"
 
 # Normal colors (ANSI 0-7)
-color0 = "#000000"
-color1 = "#d94b18"
-color2 = "#d98b48"
-color3 = "#f29d35"
-color4 = "#f28a2e"
-color5 = "#1f4e5b"
-color6 = "#bf6341"
-color7 = "#bf9b6f"
+color0 = "#120d0a"
+color1 = "#8e2f22"
+color2 = "#7f6a46"
+color3 = "#b88a42"
+color4 = "#c86a24"
+color5 = "#3c8f95"
+color6 = "#8a5e3b"
+color7 = "#d1b38a"
 
 # Bright colors (ANSI 8-15)
-color8 = "#4a2d30"
-color9 = "#d94b18"
-color10 = "#d98b48"
-color11 = "#f29d35"
-color12 = "#f28a2e"
-color13 = "#49afc4"
-color14 = "#bf6341"
-color15 = "#f2e85c"
+color8 = "#3a2a20"
+color9 = "#b24a22"
+color10 = "#9a8457"
+color11 = "#d2a25a"
+color12 = "#e08a2e"
+color13 = "#58b8c2"
+color14 = "#a87448"
+color15 = "#f0ddba"
+
+# ░░      ░░░  ░░░░░░░░       ░░                              
+# ▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒                              
+# ▓  ▓▓▓▓  ▓▓  ▓▓▓▓▓▓▓▓  ▓▓▓▓  ▓                              
+# █  ████  ██  ████████  ████  █                              
+# ██      ███        ██       ██                              
+#                                                             
+# ░        ░░░      ░░░       ░░░░      ░░░       ░░░░      ░░
+# ▒▒▒▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒
+# ▓▓▓▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓
+# █  ████  ██  ████  ██  ████  ██  ████  ██  ████  ██  ████  █
+# ██      ████      ███       ████      ███       ████      ██
+#                                                             

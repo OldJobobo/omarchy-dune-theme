@@ -1,3 +1,20 @@
+/*                                                                     */
+/*                                                                     */
+/* ,gggggggggggg,    ,ggg,         gg  ,ggg, ,ggggggg,     ,ggggggg,   */
+/* dP"""88""""""Y8b, dP""Y8a        88 dP""Y8,8P"""""Y8b  ,dP""""""Y8b */
+/* Yb,  88       `8b,Yb, `88        88 Yb, `8dP'     `88  d8'    a  Y8 */
+/*  `"  88        `8b `"  88        88  `"  88'       88  88     "Y8P' */
+/*      88         Y8     88        88      88        88  `8baaaa      */
+/*      88         d8     88        88      88        88 ,d8P""""      */
+/*      88        ,8P     88        88      88        88 d8"           */
+/*      88       ,8P'     88        88      88        88 Y8,           */
+/*      88______,dP'      Y8b,____,d88,     88        Y8,`Yba,,_____,  */
+/*     888888888P"         "Y888888P"Y8     88        `Y8  `"Y8888888  */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+
 /**
 * @name Omarchy Dune Vencord
 * @author @oldjobobo
@@ -6,22 +23,22 @@
 **/
 
 :root {
-  --color00: #000000;
-  --color01: #d94b18;
-  --color02: #d98b48;
-  --color03: #f29d35;
-  --color04: #f28a2e;
-  --color05: #1f4e5b;
-  --color06: #bf6341;
-  --color07: #bf9b6f;
-  --color08: #4a2d30;
-  --color09: #d94b18;
-  --color10: #d98b48;
-  --color11: #f29d35;
-  --color12: #f28a2e;
-  --color13: #49afc4;
-  --color14: #bf6341;
-  --color15: #f2e85c;
+  --color00: #120d0a;
+  --color01: #8e2f22;
+  --color02: #7f6a46;
+  --color03: #b88a42;
+  --color04: #c86a24;
+  --color05: #3c8f95;
+  --color06: #8a5e3b;
+  --color07: #d1b38a;
+  --color08: #3a2a20;
+  --color09: #b24a22;
+  --color10: #9a8457;
+  --color11: #d2a25a;
+  --color12: #e08a2e;
+  --color13: #58b8c2;
+  --color14: #a87448;
+  --color15: #f0ddba;
 
   --item-surface-0: color-mix(in srgb, var(--color00) 96%, black);
   --item-surface-1: var(--color00);
@@ -315,3 +332,16 @@ span[class*="textBadge"] {
   color: var(--item-text-inverse) !important;
   box-shadow: 0 0 10px color-mix(in srgb, var(--item-accent) 45%, transparent) !important;
 }
+
+/* ░░      ░░░  ░░░░░░░░       ░░                               */
+/* ▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒                               */
+/* ▓  ▓▓▓▓  ▓▓  ▓▓▓▓▓▓▓▓  ▓▓▓▓  ▓                               */
+/* █  ████  ██  ████████  ████  █                               */
+/* ██      ███        ██       ██                               */
+/*                                                              */
+/* ░        ░░░      ░░░       ░░░░      ░░░       ░░░░      ░░ */
+/* ▒▒▒▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒ */
+/* ▓▓▓▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓ */
+/* █  ████  ██  ████  ██  ████  ██  ████  ██  ████  ██  ████  █ */
+/* ██      ████      ███       ████      ███       ████      ██ */
+/*                                                              */

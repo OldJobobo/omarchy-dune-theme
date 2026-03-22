@@ -1,5 +1,83 @@
-@define-color background-color #000000;
-@define-color border-color #4a2d30;
-@define-color label #bf9b6f;
-@define-color image #bf9b6f;
-@define-color progress #f29d35;
+/*                                                                     */
+/*                                                                     */
+/* ,gggggggggggg,    ,ggg,         gg  ,ggg, ,ggggggg,     ,ggggggg,   */
+/* dP"""88""""""Y8b, dP""Y8a        88 dP""Y8,8P"""""Y8b  ,dP""""""Y8b */
+/* Yb,  88       `8b,Yb, `88        88 Yb, `8dP'     `88  d8'    a  Y8 */
+/*  `"  88        `8b `"  88        88  `"  88'       88  88     "Y8P' */
+/*      88         Y8     88        88      88        88  `8baaaa      */
+/*      88         d8     88        88      88        88 ,d8P""""      */
+/*      88        ,8P     88        88      88        88 d8"           */
+/*      88       ,8P'     88        88      88        88 Y8,           */
+/*      88______,dP'      Y8b,____,d88,     88        Y8,`Yba,,_____,  */
+/*     888888888P"         "Y888888P"Y8     88        `Y8  `"Y8888888  */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+
+@define-color background-color #120d0a;
+@define-color border-color #7a5638;
+@define-color label #d1b38a;
+@define-color image #d1b38a;
+@define-color progress #c86a24;
+@define-color panel-edge #241b15;
+
+window:not(:backdrop),
+window:backdrop {
+    border: none;
+    border-width: 0;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 14px;
+}
+
+window:not(:backdrop) #container,
+window:backdrop #container {
+    border: 2px solid @border-color;
+    border-radius: 0;
+    background-color: alpha(@background-color, 0.9);
+    padding: 14px 18px;
+    background-clip: padding-box;
+    box-shadow:
+        inset 0 1px rgba(240, 221, 186, 0.02),
+        0 10px 24px rgba(0, 0, 0, 0.62);
+}
+
+image {
+    -gtk-icon-size: 28px;
+    margin-right: 12px;
+}
+
+label {
+    letter-spacing: 0.04em;
+}
+
+progressbar,
+trough {
+    min-height: 10px;
+    border-radius: 0;
+}
+
+trough {
+    background-color: @panel-edge;
+    border: 1px solid alpha(@border-color, 0.85);
+}
+
+progress {
+    background-color: @progress;
+    border-radius: 0;
+}
+
+/* ░░      ░░░  ░░░░░░░░       ░░                               */
+/* ▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒                               */
+/* ▓  ▓▓▓▓  ▓▓  ▓▓▓▓▓▓▓▓  ▓▓▓▓  ▓                               */
+/* █  ████  ██  ████████  ████  █                               */
+/* ██      ███        ██       ██                               */
+/*                                                              */
+/* ░        ░░░      ░░░       ░░░░      ░░░       ░░░░      ░░ */
+/* ▒▒▒▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒ */
+/* ▓▓▓▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓ */
+/* █  ████  ██  ████  ██  ████  ██  ████  ██  ████  ██  ████  █ */
+/* ██      ████      ███       ████      ███       ████      ██ */
+/*                                                              */

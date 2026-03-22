@@ -1,6 +1,196 @@
-@define-color selected-text #f28a2e;
-@define-color text #bf9b6f;
-@define-color base #000000;
-@define-color border #f28a2e;
-@define-color foreground #bf9b6f;
-@define-color background #000000;
+/*                                                                     */
+/*                                                                     */
+/* ,gggggggggggg,    ,ggg,         gg  ,ggg, ,ggggggg,     ,ggggggg,   */
+/* dP"""88""""""Y8b, dP""Y8a        88 dP""Y8,8P"""""Y8b  ,dP""""""Y8b */
+/* Yb,  88       `8b,Yb, `88        88 Yb, `8dP'     `88  d8'    a  Y8 */
+/*  `"  88        `8b `"  88        88  `"  88'       88  88     "Y8P' */
+/*      88         Y8     88        88      88        88  `8baaaa      */
+/*      88         d8     88        88      88        88 ,d8P""""      */
+/*      88        ,8P     88        88      88        88 d8"           */
+/*      88       ,8P'     88        88      88        88 Y8,           */
+/*      88______,dP'      Y8b,____,d88,     88        Y8,`Yba,,_____,  */
+/*     888888888P"         "Y888888P"Y8     88        `Y8  `"Y8888888  */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+
+@define-color selected-text #3c8f95;
+@define-color text #d1b38a;
+@define-color base #120d0a;
+@define-color border #4a3426;
+@define-color frame #7a5638;
+@define-color panel #1a1410;
+@define-color panel-edge #241b15;
+@define-color accent-line #c86a24;
+@define-color hover #221914;
+@define-color selected-bg #2a1d15;
+@define-color muted #8f765d;
+@define-color foreground #d1b38a;
+@define-color background #120d0a;
+
+/* The outer popup surface that sits on top of the desktop. */
+window,
+#window {
+    /* Keeps the popup's root transparent so only the menu panel is visible. */
+    background-color: transparent;
+    /* Default text color inherited by anything inside the popup. */
+    color: @text;
+    /* Removes Walker's default outer border around the popup. */
+    border: none;
+    /* Prevents extra space between the popup edge and the menu panel. */
+    padding: 0;
+    /* Disables any default shadow on the root popup container. */
+    box-shadow: none;
+    /* Draws the soft vignette behind the menu panel. */
+    background-image:
+        radial-gradient(circle at center,
+            rgba(0, 0, 0, 0.52) 0%,
+            rgba(0, 0, 0, 0.26) 40%,
+            rgba(0, 0, 0, 0.0) 70%);
+}
+
+/* The main framed menu box that contains the search bar and results list. */
+window .box-wrapper,
+#box {
+    /* Sets the solid background color of the menu panel itself. */
+    background-color: @panel;
+    /* Creates the visible frame line around the panel. */
+    border: 2px solid @frame;
+    /* Keeps corners square instead of rounded. */
+    border-radius: 0;
+    /* Adds inner spacing so content does not touch the panel frame. */
+    padding: 18px 22px 20px;
+    /* Adds a faint inner highlight and a heavy outer drop shadow for depth. */
+    box-shadow:
+        inset 0 1px rgba(240, 221, 186, 0.02),
+        0 16px 34px rgba(0, 0, 0, 0.58);
+}
+
+/* The search field container at the top of the menu. */
+.search-container,
+window .search-container,
+window .search,
+.search {
+    /* Gives the search row its darker inset background. */
+    background-color: @panel-edge;
+    /* Draws the thin outline around the search row. */
+    border: 1px solid alpha(@frame, 0.35);
+    /* Keeps the search box corners square. */
+    border-radius: 0;
+    /* Adds space inside the search row around the text cursor and input text. */
+    padding: 12px 16px;
+    /* Pushes the results list down below the search row. */
+    margin: 0 0 14px 0;
+}
+
+/* The actual text input inside the search container. */
+entry,
+#entry entry,
+.input,
+entry.Input {
+    /* Lets the search container background show through the input. */
+    background-color: transparent;
+    /* Sets the typed query color. */
+    color: @foreground;
+    /* Removes the default text field border. */
+    border: none;
+    /* Keeps the input corners square. */
+    border-radius: 0;
+    /* Removes inner spacing so text aligns tightly with the container padding. */
+    padding: 0;
+    /* Removes any default glow or shadow around the input. */
+    box-shadow: none;
+    /* Removes the default outline ring on focus. */
+    outline: none;
+}
+
+/* The scrolling results area below the search bar. */
+list,
+.list,
+scrolledwindow {
+    /* Keeps the results area transparent so the main panel background shows through. */
+    background-color: transparent;
+    /* Removes default list borders. */
+    border: none;
+    /* Removes default shadows around the scrolling container. */
+    box-shadow: none;
+}
+
+/* Each result row wrapper in the menu list. */
+child {
+    /* Removes inner row spacing added by Walker. */
+    padding: 0;
+    /* Adds a small gap below each result row. */
+    margin: 0 0 4px 0;
+    /* Keeps the wrapper itself invisible. */
+    background: transparent;
+    /* Removes default borders on the row wrapper. */
+    border: none;
+}
+
+/* The visible content block for each result row. */
+child .item-box {
+    /* Sets the clickable row's internal spacing around icon and text. */
+    padding: 2px 14px;
+    /* Reserves space for the left accent rail used on hover/selection. */
+    border-left: 5px solid transparent;
+    /* Adds a very subtle separator line at the top of each row. */
+    border-top: 0px solid alpha(@foreground, 0.035);
+    /* Keeps unselected rows transparent against the panel. */
+    background-color: transparent;
+    /* Sets the default result text color. */
+    color: @foreground;
+    /* Animates hover/selection background, accent rail, and slide motion. */
+    transition:
+        background-color 120ms ease,
+        border-color 120ms ease,
+        transform 120ms ease;
+}
+
+/* Hover state for a result row under the pointer. */
+child:hover .item-box {
+    /* Adds the hover fill color behind the row. */
+    background-color: @hover;
+    /* Shows a muted left accent rail while hovering. */
+    border-left-color: alpha(@frame, 0.50);
+}
+
+/* Selected or keyboard-focused result row. */
+child:selected .item-box {
+    /* Adds the stronger selected fill color. */
+    background-color: @selected-bg;
+    /* Shows the bright accent rail for the active result. */
+    border-left-color: @accent-line;
+    /* Nudges the selected row to the right for emphasis. */
+    transform: translateX(4px);
+    /* Adds a faint inner highlight on the selected row. */
+    box-shadow: inset 0 1px rgba(240, 221, 186, 0.025);
+}
+
+/* Text inside the selected result row. */
+child:selected .item-box * {
+    /* Brightens all selected-row text and metadata. */
+    color: @selected-text;
+}
+
+/* Secondary metadata text like descriptions and dim labels in each result row. */
+label.description,
+label.dim-label,
+.description {
+    /* Uses a muted color so metadata stays subordinate to the result title. */
+    color: @muted;
+}
+
+/* ░░      ░░░  ░░░░░░░░       ░░                               */
+/* ▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒                               */
+/* ▓  ▓▓▓▓  ▓▓  ▓▓▓▓▓▓▓▓  ▓▓▓▓  ▓                               */
+/* █  ████  ██  ████████  ████  █                               */
+/* ██      ███        ██       ██                               */
+/*                                                              */
+/* ░        ░░░      ░░░       ░░░░      ░░░       ░░░░      ░░ */
+/* ▒▒▒▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒ */
+/* ▓▓▓▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓ */
+/* █  ████  ██  ████  ██  ████  ██  ████  ██  ████  ██  ████  █ */
+/* ██      ████      ███       ████      ███       ████      ██ */
+/*                                                              */

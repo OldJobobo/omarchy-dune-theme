@@ -1,53 +1,70 @@
+/*                                                                     */
+/*                                                                     */
+/* ,gggggggggggg,    ,ggg,         gg  ,ggg, ,ggggggg,     ,ggggggg,   */
+/* dP"""88""""""Y8b, dP""Y8a        88 dP""Y8,8P"""""Y8b  ,dP""""""Y8b */
+/* Yb,  88       `8b,Yb, `88        88 Yb, `8dP'     `88  d8'    a  Y8 */
+/*  `"  88        `8b `"  88        88  `"  88'       88  88     "Y8P' */
+/*      88         Y8     88        88      88        88  `8baaaa      */
+/*      88         d8     88        88      88        88 ,d8P""""      */
+/*      88        ,8P     88        88      88        88 d8"           */
+/*      88       ,8P'     88        88      88        88 Y8,           */
+/*      88______,dP'      Y8b,____,d88,     88        Y8,`Yba,,_____,  */
+/*     888888888P"         "Y888888P"Y8     88        `Y8  `"Y8888888  */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+
 /**
  * Aether Theme with Sharp Corners (Hyprland-inspired)
  * GTK4/Adwaita Custom Styling
  */
 
 /* Dynamic color palette from Aether */
-@define-color background #000000;
-@define-color foreground #bf9b6f;
+@define-color background #120d0a;
+@define-color foreground #d1b38a;
 
-@define-color black #000000;
-@define-color red #d94b18;
-@define-color green #d98b48;
-@define-color yellow #f29d35;
-@define-color blue #f28a2e;
-@define-color magenta #1f4e5b;
-@define-color cyan #bf6341;
-@define-color white #bf9b6f;
-@define-color bright_black #4a2d30;
-@define-color bright_red #d94b18;
-@define-color bright_green #d98b48;
-@define-color bright_yellow #f29d35;
-@define-color bright_blue #f28a2e;
-@define-color bright_magenta #49afc4;
-@define-color bright_cyan #bf6341;
-@define-color bright_white #f2e85c;
+@define-color black #120d0a;
+@define-color red #8e2f22;
+@define-color green #7f6a46;
+@define-color yellow #b88a42;
+@define-color blue #c86a24;
+@define-color magenta #3c8f95;
+@define-color cyan #8a5e3b;
+@define-color white #d1b38a;
+@define-color bright_black #3a2a20;
+@define-color bright_red #b24a22;
+@define-color bright_green #9a8457;
+@define-color bright_yellow #d2a25a;
+@define-color bright_blue #e08a2e;
+@define-color bright_magenta #58b8c2;
+@define-color bright_cyan #a87448;
+@define-color bright_white #f0ddba;
 
 /* Adwaita Color Overrides */
 @define-color accent_bg_color @blue;
 @define-color accent_fg_color @background;
-@define-color accent_color @cyan;
+@define-color accent_color @blue;
 
 @define-color window_bg_color @background;
 @define-color window_fg_color @foreground;
 
 /* Sidebar background and content */
-@define-color view_bg_color @black;
+@define-color view_bg_color #1a1410;
 @define-color view_fg_color @foreground;
-@define-color sidebar_bg_color @black;
+@define-color sidebar_bg_color #1a1410;
 @define-color sidebar_fg_color @foreground;
-@define-color sidebar_backdrop_color @black;
-@define-color sidebar_shade_color @black;
+@define-color sidebar_backdrop_color #1a1410;
+@define-color sidebar_shade_color #1a1410;
 
-@define-color headerbar_bg_color @background;
+@define-color headerbar_bg_color #1a1410;
 @define-color headerbar_fg_color @foreground;
-@define-color headerbar_backdrop_color @black;
-@define-color headerbar_shade_color @black;
-@define-color card_bg_color @background;
+@define-color headerbar_backdrop_color #1a1410;
+@define-color headerbar_shade_color #1a1410;
+@define-color card_bg_color #1a1410;
 @define-color card_fg_color @foreground;
 
-@define-color popover_bg_color @black;
+@define-color popover_bg_color #1a1410;
 @define-color popover_fg_color @foreground;
 
 @define-color destructive_bg_color @red;
@@ -71,18 +88,18 @@
 @define-color theme_fg_color @foreground;
 @define-color theme_text_color @foreground;
 @define-color theme_bg_color @background;
-@define-color theme_base_color @black;
-@define-color theme_selected_bg_color @blue;
-@define-color theme_selected_fg_color @background;
+@define-color theme_base_color #1a1410;
+@define-color theme_selected_bg_color @selection_bg;
+@define-color theme_selected_fg_color @selection_fg;
 @define-color insensitive_bg_color @background;
-@define-color insensitive_fg_color @bright_black;
+@define-color insensitive_fg_color @bright_green;
 @define-color insensitive_base_color @black;
 @define-color theme_unfocused_fg_color @foreground;
 @define-color theme_unfocused_text_color @foreground;
 @define-color theme_unfocused_bg_color @background;
-@define-color theme_unfocused_base_color @black;
-@define-color theme_unfocused_selected_bg_color @blue;
-@define-color theme_unfocused_selected_fg_color @background;
+@define-color theme_unfocused_base_color #1a1410;
+@define-color theme_unfocused_selected_bg_color @selection_bg;
+@define-color theme_unfocused_selected_fg_color @selection_fg;
 @define-color unfocused_insensitive_color @bright_black;
 @define-color unfocused_borders alpha(@foreground, 0.1);
 @define-color warning_color @yellow;
@@ -91,8 +108,8 @@
 @define-color destructive_color @red;
 
 /* Content View Colors */
-@define-color content_view_bg @black;
-@define-color text_view_bg @black;
+@define-color content_view_bg #1a1410;
+@define-color text_view_bg #1a1410;
 
 /* GtkMessageDialog styling */
 /* Target the entire dialog's background */
@@ -115,7 +132,7 @@ messagedialog .secondary-text {
 
 /* Target the buttons in the dialog's action area */
 messagedialog button {
-    background-color: @black;
+    background-color: #1a1410;
     color: @foreground;
     border: 1px solid @bright_black;
     padding: 10px;
@@ -126,7 +143,7 @@ messagedialog button:hover {
 }
 
 banner revealer widget {
-    background: @bright_black;
+    background: #1a1410;
     padding: 5px;
     color: @foreground;
 }
@@ -168,7 +185,7 @@ filechooserbutton:drop(active) {
 }
 
 toast {
-    background-color: @black;
+    background-color: #1a1410;
     color: @foreground;
 }
 
@@ -181,3 +198,64 @@ toast button.circular.flat.image-button:hover {
 * {
     border-radius: 0;
 }
+
+/* Make interactive fills readable against the dark stone base */
+progressbar trough,
+trough {
+    background-color: #241b15;
+    border: 1px solid alpha(@foreground, 0.16);
+}
+
+progressbar progress,
+progressbar.horizontal progress,
+progressbar.vertical progress,
+scale highlight,
+scale fill,
+levelbar block.filled {
+    background-color: @bright_blue;
+    color: @background;
+}
+
+scale trough {
+    min-height: 8px;
+    min-width: 8px;
+    background-color: #241b15;
+    border: 1px solid alpha(@foreground, 0.16);
+}
+
+scale slider {
+    min-width: 18px;
+    min-height: 18px;
+    background-color: @blue;
+    border: 1px solid @bright_blue;
+    box-shadow: none;
+}
+
+scale slider:hover {
+    background-color: @bright_blue;
+}
+
+scale slider:active {
+    background-color: @foreground;
+    border-color: @bright_blue;
+}
+
+levelbar block {
+    min-height: 8px;
+    min-width: 8px;
+    background-color: #241b15;
+    border: 1px solid alpha(@foreground, 0.12);
+}
+
+/* ░░      ░░░  ░░░░░░░░       ░░                               */
+/* ▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒                               */
+/* ▓  ▓▓▓▓  ▓▓  ▓▓▓▓▓▓▓▓  ▓▓▓▓  ▓                               */
+/* █  ████  ██  ████████  ████  █                               */
+/* ██      ███        ██       ██                               */
+/*                                                              */
+/* ░        ░░░      ░░░       ░░░░      ░░░       ░░░░      ░░ */
+/* ▒▒▒▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒ */
+/* ▓▓▓▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓ */
+/* █  ████  ██  ████  ██  ████  ██  ████  ██  ████  ██  ████  █ */
+/* ██      ████      ███       ████      ███       ████      ██ */
+/*                                                              */
