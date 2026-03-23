@@ -33,7 +33,7 @@ terminal_colors:
     cyan:    "#8a5e3b"
     white:   "#d1b38a"
   bright:
-    black:   "#3a2a20"
+    black:   "#403026"
     red:     "#b24a22"
     green:   "#9a8457"
     yellow:  "#d2a25a"

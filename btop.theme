@@ -28,7 +28,7 @@ theme[title]="#c86a24"
 theme[hi_fg]="#58b8c2"
 
 # Background color of selected item in processes box
-theme[selected_bg]="#3a2a20"
+theme[selected_bg]="#403026"
 
 # Foreground color of selected item in processes box
 theme[selected_fg]="#e08a2e"
@@ -44,7 +44,7 @@ theme[cpu_box]="#a87448"
 theme[mem_box]="#a87448"
 theme[net_box]="#a87448"
 theme[proc_box]="#a87448"
-theme[div_line]="#3a2a20"
+theme[div_line]="#403026"
 
 # Gradient for all meters and graphs
 theme[temp_start]="#8a5e3b"

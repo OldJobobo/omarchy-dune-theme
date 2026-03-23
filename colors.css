@@ -29,7 +29,7 @@
   @define-color color5 #3c8f95;
   @define-color color6 #8a5e3b;
   @define-color color7 #d1b38a;
-  @define-color color8 #3a2a20;
+  @define-color color8 #403026;
   @define-color color9 #b24a22;
   @define-color color10 #9a8457;
   @define-color color11 #d2a25a;
@@ -42,7 +42,7 @@
   @define-color background #120d0a;
   @define-color foreground #d1b38a;
   @define-color accent #c86a24;
-  @define-color selection_bg #3a2a20;
+  @define-color selection_bg #403026;
   @define-color selection_fg #e08a2e;
   @define-color cursor #d1b38a;
 

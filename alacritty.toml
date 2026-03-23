@@ -40,7 +40,7 @@ cyan    = "#8a5e3b"
 white   = "#d1b38a"
 
 [colors.bright]
-black   = "#3a2a20"
+black   = "#403026"
 red     = "#b24a22"
 green   = "#9a8457"
 yellow  = "#d2a25a"
@@ -55,7 +55,7 @@ cursor = "#d1b38a"
 
 [colors.selection]
 text = "#e08a2e"
-background = "#3a2a20"
+background = "#403026"
 
 #   ______   __       ______                                       
 #  /_____/\ /_/\     /_____/\                                      
