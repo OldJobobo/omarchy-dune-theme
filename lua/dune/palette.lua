@@ -59,12 +59,13 @@ end
 function M.semantic(opts)
 	opts = opts or {}
 	local raw = M.raw()
+	local line_bg = raw.selection_background == raw.color8 and "#2c2019" or raw.selection_background
 
 	local palette = {
 		bg = opts.transparent and "NONE" or raw.background,
 		bg_dark = raw.color0,
-		bg_alt = raw.color8,
-		bg_highlight = raw.color8,
+		bg_alt = line_bg,
+		bg_highlight = line_bg,
 		bg_visual = raw.selection_background,
 		bg_status = raw.color0,
 		bg_float = opts.transparent and "NONE" or raw.color0,
